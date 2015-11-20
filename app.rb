@@ -1,6 +1,11 @@
 require 'sinatra'
 require 'httparty'
 
+
+get '/' do
+  erb :index
+end
+
 get '/image' do
   # "Hello #{params[:ra]} #{params[:de]}"
   # "https://archive.stsci.edu/siap/search.php?POS=#{params[:ra]},#{params[:de]}&SIZE=0.05&FORMAT=gif"
